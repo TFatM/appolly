@@ -1,0 +1,149 @@
+.header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+  height: 114px;
+  width: 100%;
+  margin-top: 35px;
+
+  &__top{
+    display: flex;
+    gap: 627px;
+  }
+
+  &__contacts{
+    display: flex;
+    gap: 47px;
+
+    &__email{
+      display: flex;
+      align-items: center;
+      font-family: "Josefin";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-brand-white);
+      transition: filter .3s;
+
+      &__icon{
+        margin-right: 18px;
+      }
+
+      &:hover{
+        filter: invert(100%);
+      }
+    }
+
+    &__tel{
+      display: flex;
+      align-items: center;
+      font-family: "Josefin", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-brand-white);
+      transition: filter .3s;
+      
+      &__icon {
+        margin-right: 18px;
+      }
+      
+      &:hover {
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &__social{
+    display: flex;
+    gap: 30px;
+
+    &__icon{
+      border: none;
+      background: none;
+      transition: filter .3s;
+      cursor: pointer;
+
+      &:hover{
+        filter: invert(100%);
+      }
+    }
+  }
+
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: var(--color-brand-white);
+
+    &__list{
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      gap: 40px;
+
+      &.left{
+        margin-left: 52px;
+      }
+    }
+
+    &__link{
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--color-brand-black);
+      text-underline-offset: 0.02em;
+      transition: color .3s,
+      text-decoration .3s,
+      text-underline-offset .3s;
+
+      &:hover{
+        color: var(--color-brand-blue);
+        text-decoration: underline 0.08em var(--color-brand-blue);
+        text-underline-offset: 0.4em;
+      }
+    }
+
+  &__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: var(--color-brand-white);
+  }
+
+  &__button{
+    width: 158px;
+    height: 50px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-brand-blue);
+    font-family: "Josefin";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-brand-white);
+    cursor: pointer;
+    transition: background-color .3s,
+    color .3s,
+    border .1s;
+
+    &:hover{
+      color: var(--color-brand-black);
+      background-color: var(--color-brand-white);
+      border: var(--color-brand-blue) solid 3px;
+    }
+  }
+  }
+}
