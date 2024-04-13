@@ -1,0 +1,75 @@
+.about{
+  display: flex;
+  justify-content: center;
+  height: 1014px;
+
+  &__container{
+    position: absolute;
+    top: 1144px;
+  }
+
+  &__title{
+    font-family: "Josefin";
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-brand-black);
+    margin-bottom: 19px;
+  }
+
+  &__parag{
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-brand-gray);
+    margin-bottom: 60px;
+  }
+
+  &__wrapper{
+    display: flex;
+    gap: 188px;
+  }
+
+  &__points{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    &__container{
+      padding: 30px 20px 21px 59px;
+      border-radius: 5px;
+      box-shadow:  0px 0px 1px 0.2px var(--color-brand-gray);
+    }
+
+    &__check{
+      position: absolute;
+      left: 592px;
+    }
+
+    &__title{
+      display: flex;
+      align-items: center;
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: var(--color-brand-black);
+      margin-bottom: 12px;
+    }
+
+    &__parag{
+      font-family: "Josefin";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-brand-gray);
+    }
+  }
+}

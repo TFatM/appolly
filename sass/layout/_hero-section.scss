@@ -1,0 +1,94 @@
+.hero-section{
+  display: flex;
+  height: 1024px;
+  background-image: url(/img/Background-Hero.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  &__container{
+    position: absolute;
+    top: 372px;
+    left: 135px;
+    width: 570px;
+    height: 432px;
+    background-color: var(--color-brand-white);
+  }
+
+  &__title{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    font-family: "Josefin";
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: var(--color-brand-blue);
+  }
+
+  &__parag{
+    position: absolute;
+    left: 30px;
+    top: 184px;
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-brand-gray);
+  }
+
+  &__bottomHeading{
+    position: absolute;
+    left: 30px;
+    top: 302px;
+    font-family: "Josefin";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+    text-transform: uppercase;
+    color: var(--color-brand-black);
+  }
+
+  &__button{
+    position: absolute;
+    left: 30px;
+    top: 345px;
+    gap: 14px;
+    display: flex;
+
+    &__googlePlay{
+      width: 149px;
+      height: 47px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    &__appStore{
+      width: 151px;
+      height: 45px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  }
+
+  &__phoneImg{
+    position: absolute;
+    top: 216px;
+    left: 873px;
+    width: 646px;
+    height: 725px;
+  }
+}
+
+.square{
+  position: absolute;
+  z-index: 0;
+  top: 321px;
+  left: 185px;
+  width: 570px;
+  height: 535px;
+  border: rgb(117, 114, 255) 18px solid;
+}

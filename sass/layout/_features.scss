@@ -1,0 +1,104 @@
+.features{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 1710px;
+  background-image: url(/img/Background-features.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-left: 175px;
+  padding-right: 132px;
+
+
+  &__title{
+    font-family: "Josefin";
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-brand-white);
+    margin-top: 120px;
+  }
+
+  &__parag{
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-brand-white);
+    margin-top: 18px;
+    margin-bottom: 60px;
+  }
+
+  &__top-cont{
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    gap: 485px;
+  }
+
+  &__chat{
+    color: var(--color-brand-white);
+    text-align: center;
+
+    &__img{
+      margin-bottom: 22px;
+    }
+
+    &__title{
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    &__parag{
+      font-family: "Josefin";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__unlimFeatures{
+    color: var(--color-brand-white);
+    text-align: right;
+
+    &__img {
+      margin-bottom: 22px;
+    }
+
+    &__title {
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    &__parag {
+      font-family: "Josefin";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__versions{
+  }
+
+  &__design{
+  }
+
+  &__graphics{
+  }
+
+  &__support{
+  }
+}

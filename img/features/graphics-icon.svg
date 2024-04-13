@@ -1,0 +1,19 @@
+<svg width="56.000000" height="56.000000" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip43_16">
+			<rect id="Icons/eye-scanner 1" width="56.000000" height="56.000000" transform="matrix(1 0 0 -1 0 56)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="Icons/eye-scanner 1" width="56.000000" height="56.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<rect id="Icons/eye-scanner 1" width="56.000000" height="56.000000" transform="matrix(1 0 0 -1 0 56)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip43_16)">
+		<path id="Vector" d="M55.77 28.86C49.47 40 39.09 46.66 28 46.66C16.9 46.66 6.52 40 0.22 28.86C-0.08 28.32 -0.08 27.67 0.22 27.14C6.52 15.99 16.9 9.33 28 9.33C39.09 9.33 49.47 15.99 55.77 27.13C56.07 27.67 56.07 28.32 55.77 28.86ZM28 18.66C22.85 18.66 18.66 22.85 18.66 27.99C18.66 33.14 22.85 37.33 28 37.33C33.14 37.33 37.33 33.14 37.33 27.99C37.33 22.85 33.14 18.66 28 18.66Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M53.66 37.33C52.37 37.33 51.33 38.37 51.33 39.66L51.33 49C51.33 50.28 50.28 51.33 49 51.33L39.66 51.33C38.37 51.33 37.33 52.37 37.33 53.66C37.33 54.95 38.37 56 39.66 56L49 56C52.85 56 56 52.85 56 49L56 39.66C56 38.37 54.95 37.33 53.66 37.33Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M2.33 37.33C1.04 37.33 0 38.37 0 39.66L0 49C0 52.85 3.14 56 7 56L16.33 56C17.62 56 18.66 54.95 18.66 53.66C18.66 52.37 17.62 51.33 16.33 51.33L7 51.33C5.71 51.33 4.66 50.28 4.66 49L4.66 39.66C4.66 38.37 3.62 37.33 2.33 37.33Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M49 -0.01L39.66 -0.01C38.37 -0.01 37.33 1.04 37.33 2.33C37.33 3.62 38.37 4.66 39.66 4.66L49 4.66C50.28 4.66 51.33 5.71 51.33 6.99L51.33 16.33C51.33 17.62 52.37 18.66 53.66 18.66C54.95 18.66 56 17.62 56 16.33L56 6.99C56 3.14 52.85 -0.01 49 -0.01Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M16.33 -0.01L7 -0.01C3.14 -0.01 0 3.14 0 6.99L0 16.33C0 17.62 1.04 18.66 2.33 18.66C3.62 18.66 4.66 17.62 4.66 16.33L4.66 6.99C4.66 5.71 5.71 4.66 7 4.66L16.33 4.66C17.62 4.66 18.66 3.62 18.66 2.33C18.66 1.04 17.62 -0.01 16.33 -0.01Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>
