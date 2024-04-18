@@ -1,0 +1,108 @@
+.team{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 1021px;
+  margin-top: 120px;
+
+  &__title{
+    font-family: "Josefin";
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: var(--color-brand-black);
+    text-transform: uppercase;
+    margin-bottom: 23px;
+  }
+
+  &__parag{
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-brand-gray);
+    margin-bottom: 60px;
+  }
+
+  &__container{
+    display: flex;
+    gap: 30px;
+  }
+
+  &__card{
+    width: 370px;
+    height: 580px;
+    padding-top: 29px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px .02px var(--color-brand-gray);
+
+    &__pic-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 66px;
+    }
+
+    &__vector{
+      width: 220px;
+      height: 220px;
+      position: absolute;
+    }
+
+    &__img{
+    position: relative;
+      width: 198px;
+      height: 198px;
+    }
+
+    &__name{
+      font-family: "Josefin";
+      font-weight: 700;
+      font-size: 31.25px;
+      line-height: 47.25px;
+      color: var(--color-brand-black);
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    &__position{
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--color-brand-gray);
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    &__parag{
+      font-family: "Josefin";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-brand-gray);
+      margin-bottom: 40px;
+
+    }
+
+    &__social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 31.5px;
+
+      &__icon{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+          filter: invert(34%) sepia(81%) saturate(1199%) hue-rotate(220deg) brightness(89%) contrast(105%);
+        }
+      }
+    }
+
+  }
+}

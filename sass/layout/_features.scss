@@ -33,11 +33,19 @@
     margin-bottom: 60px;
   }
 
+  &__container{
+    display: flex;
+    flex-direction: column;
+  }
+
   &__top-cont{
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     gap: 485px;
+    margin-top: 122px;
+    margin-bottom: 173.5px;
+    // justify-content: space-between;
+    // width: 65vw;
   }
 
   &__chat{
@@ -91,14 +99,118 @@
   }
 
   &__versions{
+    color: var(--color-brand-white);
+    text-align: left;
+
+    &__img {
+      margin-bottom: 22px;
+    }
+
+    &__title {
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    &__parag {
+      font-family: "Josefin";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  &__bottom-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 485px;
+    margin-top: 173.5px;
+    margin-bottom: 123px;
   }
 
   &__design{
+    color: var(--color-brand-white);
+    text-align: right;
+
+  &__img {
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    font-family: "Josefin";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  &__parag {
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
   }
 
   &__graphics{
+    color: var(--color-brand-white);
+    text-align: left;
+
+  &__img {
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    font-family: "Josefin";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  &__parag {
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
   }
 
   &__support{
+    color: var(--color-brand-white);
+    text-align: center;
+
+  &__img {
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    font-family: "Josefin";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  &__parag {
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  }
+
+  &__app-img{
+    position: absolute;
+    top: 2585px;
+    left: 532px;
+    height: 905px;
+    width: 555px;
   }
 }

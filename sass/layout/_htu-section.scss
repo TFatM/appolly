@@ -1,0 +1,49 @@
+.htu-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 682px;
+  margin-top: 60px;
+  margin-bottom: 240px;
+
+  &__bg-container{
+    position: relative;
+    top: 542px;
+    height: 477px;
+    width: 100%;
+    z-index: -1;
+    flex-shrink: 0;
+    background-image: url(/img/Background-htu.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  &__title{
+    font-family: "Josefin";
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    text-transform: uppercase;
+    color: var(--color-brand-white);
+    margin-top: 162px;
+    margin-bottom: 24px;
+  }
+
+  &__parag{
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-brand-white);
+    margin-bottom: 60px;
+  }
+
+  &__video{
+    width: 770px;
+    height: 319px;
+    border-radius: 10px;
+  }
+}

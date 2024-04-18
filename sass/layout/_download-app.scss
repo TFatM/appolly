@@ -1,0 +1,88 @@
+.download-app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+
+  &__title{
+    font-family: "Josefin";
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: var(--color-brand-black);
+    margin-top: 17px;
+  }
+
+  &__parag{
+    font-family: "Josefin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-brand-gray);
+    margin-bottom: 40px;
+  }
+
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 325px;
+    margin-bottom: 59px;
+  }
+
+  &__google-play{
+    height: 47px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__app-store{
+    height: 47px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 570px;
+
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 170px;
+      height: 176px;
+      border-radius: 10px;
+      background-color: var(--color-brand-blue);
+      gap: 18px;
+    }
+
+    &__img{
+      width: 35px;
+      height: 35px;
+    }
+
+    &__number{
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 25px;
+      color: var(--color-brand-white);
+    }
+
+    &__title{
+      font-family: "Josefin";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: var(--color-brand-white);
+    }
+  }
+}
