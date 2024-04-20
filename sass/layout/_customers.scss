@@ -1,0 +1,105 @@
+.customers{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(/img/Background-customers.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 876px;
+
+  &__title{
+    font-family: 'Josefin';
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: var(--color-brand-white);
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 23px;
+  }
+
+  &__parag{
+    font-family: 'Josefin';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-brand-white);
+    margin-bottom: 60px;
+  }
+
+  &__swiper{
+    margin: 0;
+
+    &__container{
+      padding: 0;
+    }
+
+    &__wrapper{
+    width: 1202px;
+    height: 436px;
+    margin-bottom: 60px;
+    }
+
+    &__slide{
+      width: 770px!important;
+      height: 357px;
+      border-radius: 10px;
+      background-color: var(--color-brand-white);
+      box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+      padding-top: 40px;
+
+      &__photo{
+        width: 96px!important;
+        height: 96px!important;
+        border-radius: 50px;
+        margin-bottom: 20px;
+      }
+
+      &__name{
+        font-family: 'Josefin';
+        font-weight: 700;
+        font-size: 31.25px;
+        line-height: 47.25px;
+        text-transform: uppercase;
+        color: var(--color-brand-black);
+      }
+
+      &__position{
+        font-family: 'Josefin';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: var(--color-brand-black);
+        margin-bottom: 8px;
+      }
+
+      &__parag{
+        font-family: 'Josefin';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-brand-gray);
+      }
+    }
+
+    &__pagination{
+      cursor: pointer;
+
+      .swiper-pagination-bullet{
+        background: var(--color-brand-white)!important;
+        width: 16px;
+        height: 16px;
+      }
+      
+      .swiper-pagination-bullet-active{
+        background: var(--color-brand-blue)!important;
+        border: 2px solid var(--color-brand-white);
+        height: 14px;
+        width: 14px;
+      }
+    }
+  }
+}
