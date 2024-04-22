@@ -97,6 +97,7 @@
         background: transparent;
         border: none;
         cursor: pointer;
+        transition: filter .2s;
 
         &:hover{
           filter: invert(34%) sepia(81%) saturate(1199%) hue-rotate(220deg) brightness(89%) contrast(105%);
