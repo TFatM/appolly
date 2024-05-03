@@ -11,9 +11,16 @@
   width: 100%;
   margin-top: 35px;
 
+
   &__top{
     display: flex;
     gap: 627px;
+    @media screen and (max-width: $bp-tablet){
+      gap: 151px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__contacts{
@@ -75,6 +82,7 @@
     }
   }
 
+  
   &__nav{
     display: flex;
     justify-content: space-between;
@@ -83,6 +91,30 @@
     height: 60px;
     border-radius: 5px;
     background-color: var(--color-brand-white);
+    @media screen and (max-width: $bp-tablet) {
+      width: 688px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      width: 343px;
+    }
+    
+    &__burger{
+      display:none;
+      width: 0;
+      height: 0;
+      border: none;
+      background: none;
+  
+      @media screen and (max-width: $bp-tablet) {
+        display: block;
+        justify-content: start;
+        width: 18px;
+        height: 16px;
+        position: relative;
+        left: 16px;
+        cursor: pointer;
+      }
+    }
 
     &__list{
       display: flex;
@@ -106,11 +138,14 @@
       transition: color .3s,
       text-decoration .3s,
       text-underline-offset .3s;
-
+      
       &:hover{
         color: var(--color-brand-blue);
         text-decoration: underline 0.08em var(--color-brand-blue);
         text-underline-offset: 0.4em;
+      }
+      @media screen and (max-width: $bp-tablet) {
+         display: none;
       }
     }
 

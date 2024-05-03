@@ -3,9 +3,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Josefin";
 
   &__title{
-    font-family: "Josefin";
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
@@ -13,11 +13,13 @@
     text-align: center;
     color: var(--color-brand-black);
     margin-top: 120px;
-    margin-bottom: 23px;
+  margin-bottom: 23px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 18px;
+    }
   }
 
   &__parag{
-    font-family: "Josefin";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;

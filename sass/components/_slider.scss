@@ -1,6 +1,8 @@
 .swiper{
-  margin-left: 114px;
-  margin-right: 114px;
+  margin: 0px 114px 0px 114px;
+  @media screen and (max-width: $bp-tablet){
+    margin: 0px 40px 0px 40px;
+  }
 }
 
 .swiper-pagination-bullet {

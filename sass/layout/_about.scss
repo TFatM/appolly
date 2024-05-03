@@ -2,14 +2,19 @@
   display: flex;
   justify-content: center;
   height: 1014px;
+  font-family: "Josefin";
+  @media screen and (max-width: $bp-tablet) {
+    height: 848px;
+  }
 
   &__container{
-    position: absolute;
-    top: 1144px;
+    margin: 120px 135px 120px 161px;
+    @media screen and (max-width: $bp-tablet) {
+      margin: 120px 40px 159px 39px;
+    }
   }
 
   &__title{
-    font-family: "Josefin";
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
@@ -20,7 +25,6 @@
   }
 
   &__parag{
-    font-family: "Josefin";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -32,6 +36,18 @@
   &__wrapper{
     display: flex;
     gap: 188px;
+    @media screen and (max-width: $bp-tablet) {
+      gap: 60px;
+    }
+  }
+
+  &__img{
+    width: 386px;
+    height: 526px;
+    @media screen and (max-width: $bp-tablet) {
+      width: 238px;
+      height: 359px;
+    }
   }
 
   &__points{
@@ -40,36 +56,54 @@
     align-items: center;
     flex-direction: column;
     gap: 40px;
+    @media screen and (max-width: $bp-tablet) {
+      gap: 20px
+    }
 
     &__container{
-      padding: 30px 20px 21px 59px;
+      padding: 0px 20px 21px 59px;
       border-radius: 5px;
       box-shadow:  0px 0px 1px 0.2px var(--color-brand-gray);
+      @media screen and (max-width: $bp-tablet) {
+        padding: 0px 30px 10px 61px;
+      }
     }
 
     &__check{
-      position: absolute;
-      left: 592px;
+      position: relative;
+      left: -35px;
+      top: 28px;
+      @media screen and (max-width: $bp-tablet) {
+        left: -35px;
+      }
     }
 
     &__title{
       display: flex;
       align-items: center;
-      font-family: "Josefin";
       font-weight: 600;
       font-size: 20px;
       line-height: 30px;
       text-transform: uppercase;
       color: var(--color-brand-black);
       margin-bottom: 12px;
+      @media screen and (max-width: $bp-tablet) {
+        margin-bottom: 3px;
+      }
     }
-
+    
+    
     &__parag{
-      font-family: "Josefin";
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       color: var(--color-brand-gray);
+    }
+    &__parag span{
+      display: block;
+      @media screen and (max-width: $bp-tablet){
+        display: none;
+      }
     }
   }
 }

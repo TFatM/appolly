@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  font-family: "Josefin";
 
   &__container{
     position: absolute;
@@ -13,49 +14,60 @@
     width: 570px;
     height: 432px;
     background-color: var(--color-brand-white);
+    @media screen and (max-width: $bp-tablet) {
+      top: 447px;
+      left: 40px;
+      width: 356px;
+      height: 318px;
+    }
   }
 
   &__title{
-    position: absolute;
-    left: 30px;
-    top: 40px;
-    font-family: "Josefin";
     font-weight: 700;
     font-size: 48.83px;
     line-height: 49px;
     text-transform: uppercase;
+    margin: 40px 23px 18px 30px;
     color: var(--color-brand-blue);
+    @media screen and (max-width: $bp-tablet) {
+      margin: 14px 7px 6px 18px;
+      font-size: 31.25px;
+      line-height: 47.25px;
+    }
   }
 
   &__parag{
-    position: absolute;
-    left: 30px;
-    top: 184px;
-    font-family: "Josefin";
+    margin: 0px 53px 52px 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--color-brand-gray);
+    @media screen and (max-width: $bp-tablet) {
+      margin: 0px 8px 23px 18px;
+    }
   }
 
   &__bottomHeading{
-    position: absolute;
-    left: 30px;
-    top: 302px;
-    font-family: "Josefin";
+    margin: 0px 251px 5px 30px;
     font-weight: 600;
     font-size: 25px;
     line-height: 37.5px;
     text-transform: uppercase;
     color: var(--color-brand-black);
+    @media screen and (max-width: $bp-tablet) {
+      margin: 0px 103px 5px 18px;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &__button{
-    position: absolute;
-    left: 30px;
-    top: 345px;
+    margin: 0px 226px 40px 30px;
     gap: 14px;
     display: flex;
+    @media screen and (max-width: $bp-tablet) {
+      margin: 0px 24px 14px 18px;
+    }
 
     &__googlePlay{
       width: 149px;
@@ -80,6 +92,12 @@
     left: 873px;
     width: 646px;
     height: 725px;
+    @media screen and (max-width:$bp-tablet) {
+      top: 380px;
+      left: 486px;
+      width: 378px;
+      height: 423px;
+    }
   }
 }
 
@@ -91,4 +109,10 @@
   width: 570px;
   height: 535px;
   border: rgb(117, 114, 255) 18px solid;
+  @media screen and (max-width: $bp-tablet) {
+    top: 414px;
+    left: 56px;
+    width: 375px;
+    height: 381px;
+  }
 }
