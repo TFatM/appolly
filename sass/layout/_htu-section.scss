@@ -7,6 +7,11 @@
   height: 682px;
   margin-top: 60px;
   margin-bottom: 240px;
+  font-family: "Josefin";
+  @media screen and (max-width: $bp-tablet) {
+    margin: 0;
+    height: 523px;
+  }
 
   &__bg-container{
     position: relative;
@@ -19,10 +24,12 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+    @media screen and (max-width: $bp-tablet) {
+      top: 240px;
+    }
   }
 
   &__title{
-    font-family: "Josefin";
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
@@ -30,10 +37,13 @@
     color: var(--color-brand-white);
     margin-top: 162px;
     margin-bottom: 24px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-top: -140px;
+      margin-bottom: 18px;
+    }
   }
 
   &__parag{
-    font-family: "Josefin";
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -45,5 +55,9 @@
     width: 770px;
     height: 319px;
     border-radius: 10px;
+    @media screen and (max-width: $bp-tablet) {
+      width: 570px;
+      height: 231px;
+    }
   }
 }

@@ -3,6 +3,9 @@
   flex-direction: column;
   text-align: center;
   height: 1069px;
+  @media screen and (max-width: $bp-tablet) {
+    height: 1049px;
+  }
 
   &__title{
     font-family: 'Josefin';
