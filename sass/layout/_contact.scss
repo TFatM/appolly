@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   top: 109px;
-
+  font-family: 'Josefin';
 
   &__container{
   display: flex;
@@ -15,6 +15,10 @@
   border-radius: 30px;
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
   background-color: var(--color-brand-white);
+  @media screen and (max-width: $bp-tablet) {
+    width: 688px;
+    height: 150px;
+  }
   }
 
   &__block{
@@ -23,6 +27,11 @@
     width: 351px;
     height: 100px;
     gap: 18px;
+    @media screen and (max-width: $bp-tablet) {
+      width: 233px;
+      height: 60px;
+      gap: 17px;
+    }
 
 
     &__circle{
@@ -33,27 +42,48 @@
       height: 100px;
       background-color: var(--color-brand-blue);
       border-radius: 50%;
+      @media screen and (max-width: $bp-tablet) {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     &__img{
-      height: 40px;
       width: 40px;
+      height: 40px;
+      @media screen and (max-width: $bp-tablet) {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &__link{
-      font-family: 'Josefin';
       font-weight: 600;
       font-size: 25px;
       line-height: 37.5px;
       color: var(--color-brand-black);
+      transition: color .3s;
+      @media screen and (max-width: $bp-tablet) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        &:hover{
+          color: var(--color-brand-blue);
+        }
+      }
     }
   }
 
   &__line{
     display: flex;
-    height: 117px;
     width: 4px;
+    height: 117px;
     background: 4px solid var(--color-brand-gray);
     background-color: var(--color-brand-gray);
+    @media screen and (max-width: $bp-tablet) {
+      width: 3px;
+      height: 106px;
+    }
   }
 }

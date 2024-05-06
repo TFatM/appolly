@@ -3,27 +3,32 @@
   flex-direction: column;
   text-align: center;
   height: 1069px;
+  font-family: 'Josefin';
   @media screen and (max-width: $bp-tablet) {
-    height: 1049px;
+    height: 830px;
   }
 
   &__title{
-    font-family: 'Josefin';
     font-weight: 700;
     font-size: 31.25px;
     line-height: 47.25px;
     color: var(--color-brand-black);
     margin-top: 120px;
     margin-bottom: 23px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 18px;
+    }
   }
 
   &__parag{
-    font-family: 'Josefin';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: var(--color-brand-gray);
     margin-bottom: 60px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   &__article{
@@ -31,6 +36,9 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    @media screen and (max-width: $bp-tablet) {
+      gap: 24px;
+    }
 
     &__card{
       display: flex;
@@ -40,13 +48,19 @@
       height: 500px;
       border-radius: 10px;
       box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+      @media screen and (max-width: $bp-tablet) {
+        width: 213px;
+        height: 550px;
+      }
 
       &__img{
         margin-bottom: 40px;
+        @media screen and (max-width: $bp-tablet) {
+          margin-bottom: 30px;
+        }
       }
 
       &__title{
-        font-family: 'Josefin';
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
@@ -54,20 +68,26 @@
         color: var(--color-brand-black);
         margin-bottom: 10px;
         margin-left: 18px;
+        @media screen and (max-width: $bp-tablet) {
+          font-size: 18px;
+          height: 120px;
+          margin-bottom: 18px;
+        }
       }
 
       &__parag{
-        font-family: 'Josefin';
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: var(--color-brand-gray);
         margin-bottom: 28px;
         margin-left: 18px;
+        @media screen and (max-width: $bp-tablet) {
+          margin-bottom: 40px;
+        }
       }
 
       &__link{
-        font-family: 'Josefin';
         font-weight: 600;
         font-size: 20px;
         line-height: 130%;

@@ -4,17 +4,24 @@
   align-items: center;
   height: 542px;
   background-color: var(--color-brand-black);
+  font-family: 'Josefin';
+  @media screen and (max-width: $bp-tablet) {
+    height: 438px;
+  }
 
   &__container{
-    font-family: 'Josefin';
     display: flex;
     margin-top: 235px;
-
+    @media screen and (max-width: $bp-tablet) {}
+    margin-top: 135px;
   }
 
   &__logo{
     margin-right: 66px;
     color: var(--color-brand-white);
+    @media screen and (max-width: $bp-tablet) {
+      margin-right: 24px;
+    }
 
     &__title{
       font-weight: 700;
@@ -22,6 +29,9 @@
       line-height: 47.25px;
       text-transform: uppercase;
       margin-bottom: 2px;
+      @media screen and (max-width: $bp-tablet) {
+        margin-bottom: 7px;
+      }
     }
 
     &__parag{
@@ -29,12 +39,25 @@
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 38px;
+      @media screen and (max-width: $bp-tablet) {
+        width: 213px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__parag span{
+      @media screen and (max-width: $bp-tablet) {
+        display: none;
+      }
     }
 
     &__social {
       display: flex;
       align-items: center;
       gap: 30.5px;
+      @media screen and (max-width: $bp-tablet) {
+        gap: 19px;
+      }
 
       &__icon {
         background: transparent;
@@ -52,6 +75,9 @@
   &__nav{
     margin-right: 246px;
     color: var(--color-brand-white);
+    @media screen and (max-width: $bp-tablet) {
+      margin-right: 115px;
+    }
 
     &__title{
       font-weight: 600;
@@ -59,15 +85,27 @@
       line-height: 37.5px;
       text-transform: uppercase;
       margin-bottom: 11px;
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 13px;
+      }
     }
 
     &__list{
       display: flex;
       flex-direction: column;
       gap: 12px;
+
       &__link{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
         color: var(--color-brand-white);
         transition: color .2s;
+        @media screen and (max-width: $bp-tablet) {
+
+        }
 
         &:hover{
           color: var(--color-brand-blue);
@@ -85,6 +123,11 @@
       line-height: 37.5px;
       text-transform: uppercase;
       margin-bottom: 11px;
+      @media screen and (max-width: $bp-tablet) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 13px;
+      }
     }
 
     &__parag{
@@ -92,22 +135,36 @@
       font-size: 16px;
       line-height: 24px;
       margin-bottom: 33px;
+      @media screen and (max-width: $bp-tablet) {
+        margin-bottom: 30px;
+      }
     }
 
     &__form{
       width: 369px;
       height: 50px;
+      @media screen and (max-width: $bp-tablet) {
+        width: 213px;
+        height: 50px;
+      }
     }
 
     &__input{
       width: 369px;
       height: 50px;
       padding-left: 12px;
-      font-family: 'Josefin';
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
       color: var(--color-brand-black);
+      @media screen and (max-width: $bp-tablet) {
+        width: 213px;
+        height: 50px;
+        padding-left: 15px;
+        font-weight: 300;
+        font-size: 12.8px;
+        line-height: 12.8px;
+      }
 
       &__button{
         position: relative;
@@ -120,6 +177,9 @@
         background-color: var(--color-brand-blue);
         cursor: pointer;
         transition: background-color .3s;
+        @media screen and (max-width: $bp-tablet) {
+          right: -82%;;
+        }
 
         &:hover{
           background-color: var(--color-brand-gray);
@@ -133,10 +193,14 @@
     margin-top: 65.5px;
     margin-bottom: 18.5px;
     border: 1px solid var(--color-brand-white);
+    @media screen and (max-width: $bp-tablet) {
+      width: 688px;
+      margin-top: 56px;
+      margin-bottom: 18px;
+    }
   }
 
   &__copyright{
-    font-family: 'Josefin';
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
