@@ -27,33 +27,46 @@
     </div>
     <div class="header__social">
       <button type="button" class="header__social__icon">
-        <img 
-        src="./img/facebook-icon.svg" 
-        alt="facebook-icon">
+        <a href="https://www.facebook.com/">
+          <img 
+          src="./img/facebook-icon.svg" 
+          alt="facebook-icon">
+        </a>
       </button>
       <button type="button" class="header__social__icon" >
-        <img 
-        src="./img/instagram-icon.svg" 
-        alt="instagram-icon">
+        <a href="https://www.instagram.com/">
+          <img 
+          src="./img/instagram-icon.svg" 
+          alt="instagram-icon">
+        </a>
       </button>
       <button type="button" class="header__social__icon" >
-        <img 
-        src="./img/twitter-icon.svg" 
-        alt="twitter-icon">
+        <a href="https://twitter.com/?lang=uk">
+          <img 
+          src="./img/twitter-icon.svg" 
+          alt="twitter-icon">
+        </a>
       </button>
       <button type="button" class="header__social__icon" >
-        <img 
-        src="./img/youtube-icon.svg" 
-        alt="youtube-icon">
+        <a href="https://www.youtube.com/?hl=uk&gl=UA">
+          <img 
+          src="./img/youtube-icon.svg" 
+          alt="youtube-icon">
+        </a>
       </button>
     </div>
   </div>
   <nav class="header__nav">
-      <button class="header__nav__burger"><img src="./img/Burger-menu.svg"></button>
+      <button 
+      class="header__nav__burger" 
+      id="burger-menu"
+      type="button">
+      <img src="./img/Burger-menu.svg">
+    </button>
       <ul class="header__nav__list left">
         <li><a class="header__nav__link" href="#">Home</a></li>
-        <li><a class="header__nav__link" href="#">About</a></li>
-        <li><a class="header__nav__link" href="#">About</a></li>
+        <li><a class="header__nav__link" href="#about">About</a></li>
+        <li><a class="header__nav__link" href="#features">Features</a></li>
       </ul>
       <div class="header__nav__logo">
         <img 
@@ -62,12 +75,37 @@
         alt="logo">
       </div>
       <ul class="header__nav__list right">
-        <li><a class="header__nav__link" href="#">Screenshot</a></li>
+        <li><a class="header__nav__link" href="#screenshot">Screenshot</a></li>
         <li><a class="header__nav__link" href="#">Blog</a></li>
         <li><button class="header__nav__button" type="button">Download</button></li>
       </ul>
     </nav>
   </header>
+
+  <div class="menu" id="menu">
+    <button class="menu__button" id="close-menu">
+      <img 
+      class="menu__button__vector"
+      id="closeMenu"
+      src="./img/close-vector.svg">
+    </button>
+    <nav class="menu__nav">
+      <ul class="menu__list">
+        <i></i>
+        <li><a class="menu__list__item" id="menuItem" href="#">Home</a>
+        </li>
+        <li><a class="menu__list__item" id="menuItem" href="#about">About</a>
+        </li>
+        <li><a class="menu__list__item" id="menuItem" href="#features">Features</a>
+        </li>
+        <li><a class="menu__list__item" id="menuItem" href="#screenshot">Screenshot</a>
+        </li>
+        <li><a class="menu__list__item" id="menuItem" href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
   <main>
     <section class="hero-section">
       <div class="square"></div>
@@ -75,8 +113,8 @@
         <h1 class="hero-section__title">A Great App Makes<br>
           Your Life Better</h1>
           <p class="hero-section__parag">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velitmollit. Exercitation
-            veniam consequat sunt nostrud amet.</p>
+            amet sint. Velit officia consequat duis enim velit.<span> Exercitation
+            veniam consequat sunt nostrud amet.</span></p>
             <h2 class="hero-section__bottomHeading">Download App Now</h2>
             <div class="hero-section__button">
               <button class="hero-section__button__googlePlay" type="button">
@@ -91,14 +129,14 @@
               </button>
       </div>
     </div>
-    <aside>
-      <img 
+    <aside class="hero-section__imgContainer">
+    <img 
       class="hero-section__phoneImg"
       src="./img/Phone-hero.png" 
       alt="Phone-hero-img">
     </aside>
   </section>
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__container">
       <h2 class="about__title">About Our App</h2>
       <p class="about__parag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit <br>
@@ -139,7 +177,7 @@
       </div>
     </div>
   </section>
-  <section class="features">
+  <section class="features" id="features">
     <h2 class="features__title">App features</h2>
     <p class="features__parag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit <br>
     vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, <br>
@@ -211,7 +249,7 @@
       alt="feature-app-img">
     </div>
   </section>
-  <section class="app-screenshot">
+  <section class="app-screenshot" id="screenshot">
     <h3 class="app-screenshot__title">Checkout Our App Interface Look</h3>
     <p class="app-screenshot__parag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit <br>
     vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, <br>
@@ -331,19 +369,27 @@
           Est tellus vitae.</span></p>
           <div class="team__card__social">
       <button type="button" class="team__card__social__icon">
-        <img src="./img/team-card/facebook-icon-dark.svg" alt="facebook-icon">
+        <a href="https://www.facebook.com/">
+          <img src="./img/team-card/facebook-icon-dark.svg" alt="facebook-icon">
+        </a>
       </button>
       <p>|</p>
       <button type="button" class="team__card__social__icon">
-        <img src="./img/team-card/instagram-icon-dark.svg" alt="instagram-icon">
+        <a href="https://www.instagram.com/">
+          <img src="./img/team-card/instagram-icon-dark.svg" alt="instagram-icon">
+        </a>
       </button>
       <p>|</p>
       <button type="button" class="team__card__social__icon">
-        <img src="./img/team-card/twitter-icon-dark.svg" alt="twitter-icon">
+        <a href="https://www.twitter.com/">
+          <img src="./img/team-card/twitter-icon-dark.svg" alt="twitter-icon">
+        </a>
       </button>
       <p>|</p>
       <button type="button" class="team__card__social__icon">
-        <img src="./img/team-card/youtube-icon-dark.svg" alt="youtube-icon">
+        <a href="https://www.youtube.com/">
+          <img src="./img/team-card/youtube-icon-dark.svg" alt="youtube-icon">
+        </a>
       </button>
           </div>
       </div>
@@ -359,19 +405,27 @@
           Est tellus vitae.</span></p>
           <div class="team__card__social">
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/facebook-icon-dark.svg" alt="facebook-icon">
+              <a href="https://www.facebook.com/">
+                <img src="./img/team-card/facebook-icon-dark.svg" alt="facebook-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/instagram-icon-dark.svg" alt="instagram-icon">
+              <a href="https://www.instagram.com/">
+                <img src="./img/team-card/instagram-icon-dark.svg" alt="instagram-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/twitter-icon-dark.svg" alt="twitter-icon">
+              <a href="https://www.twitter.com/">
+                <img src="./img/team-card/twitter-icon-dark.svg" alt="twitter-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/youtube-icon-dark.svg" alt="youtube-icon">
+              <a href="https://www.youtube.com/">
+                <img src="./img/team-card/youtube-icon-dark.svg" alt="youtube-icon">
+              </a>
             </button>
           </div>
       </div>
@@ -387,19 +441,27 @@
           Est tellus vitae.</span></p>
           <div class="team__card__social">
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/facebook-icon-dark.svg" alt="facebook-icon">
+              <a href="https://www.facebook.com/">
+                <img src="./img/team-card/facebook-icon-dark.svg" alt="facebook-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/instagram-icon-dark.svg" alt="instagram-icon">
+              <a href="https://www.instagram.com/">
+                <img src="./img/team-card/instagram-icon-dark.svg" alt="instagram-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/twitter-icon-dark.svg" alt="twitter-icon">
+              <a href="https://www.twitter.com/">
+                <img src="./img/team-card/twitter-icon-dark.svg" alt="twitter-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="team__card__social__icon">
-              <img src="./img/team-card/youtube-icon-dark.svg" alt="youtube-icon">
+              <a href="https://www.youtube.com/">
+                <img src="./img/team-card/youtube-icon-dark.svg" alt="youtube-icon">
+              </a>
             </button>
           </div>
       </div>
@@ -514,27 +576,35 @@
       Est tellus vitae, nullam lobortis enim.</span></p>
       <div class="footer__logo__social">
             <button type="button" class="footer__logo__social__icon">
-              <img 
-              src="./img/facebook-icon.svg" 
-              alt="facebook-icon">
+              <a href="https://www.facebook.com/">
+                <img 
+                src="./img/facebook-icon.svg" 
+                alt="facebook-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="footer__logo__social__icon">
-              <img 
-              src="./img/instagram-icon.svg" 
-              alt="instagram-icon">
+              <a href="https://www.instagram.com/">
+                <img 
+                src="./img/instagram-icon.svg" 
+                alt="instagram-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="footer__logo__social__icon">
-              <img 
-              src="./img/twitter-icon.svg" 
-              alt="twitter-icon">
+              <a href="https://www.twitter.com/">
+                <img 
+                src="./img/twitter-icon.svg" 
+                alt="twitter-icon">
+              </a>
             </button>
             <p>|</p>
             <button type="button" class="footer__logo__social__icon">
-              <img 
-              src="./img/youtube-icon.svg" 
-              alt="youtube-icon">
+              <a href="https://www.youtube.com/">
+                <img 
+                src="./img/youtube-icon.svg" 
+                alt="youtube-icon">
+              </a>
             </button>
           </div>
     </div>
@@ -542,13 +612,13 @@
       <h3 class="footer__nav__title">quick link</h3>
       <ul class="footer__nav__list">
         <li>
-          <a href="#" class="footer__nav__list__link">About</a>
+          <a href="#about" class="footer__nav__list__link">About</a>
         </li>
         <li>
-          <a href="#" class="footer__nav__list__link">Features</a>
+          <a href="#features" class="footer__nav__list__link">Features</a>
         </li>
         <li>
-          <a href="#" class="footer__nav__list__link">Screenshot</a>
+          <a href="#screenshot" class="footer__nav__list__link">Screenshot</a>
         </li>
         <li>
           <a href="#" class="footer__nav__list__link">Blog</a>
@@ -581,5 +651,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script src="./js/customers-carousel.js"></script>
 <script src="./js/swiper.js"></script>
+<script src="./js/burgerMenu.js"></script>
 </body>
 </html>
