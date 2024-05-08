@@ -12,6 +12,10 @@
     margin: 0;
     height: 523px;
   }
+  @media screen and (max-width: $bp-mobile) {
+    height: 375px;
+    margin-bottom: 188px;
+  }
 
   &__bg-container{
     position: relative;
@@ -27,6 +31,9 @@
     @media screen and (max-width: $bp-tablet) {
       top: 240px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      top: 255px;
+    }
   }
 
   &__title{
@@ -41,6 +48,13 @@
       margin-top: -140px;
       margin-bottom: 18px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      width: 281px;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
+      margin-bottom: 40px;
+    }
   }
 
   &__parag{
@@ -49,6 +63,16 @@
     line-height: 24px;
     color: var(--color-brand-white);
     margin-bottom: 60px;
+    @media screen and (max-width: $bp-mobile) {
+      width: 300px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__parag span{
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__video{
@@ -58,6 +82,10 @@
     @media screen and (max-width: $bp-tablet) {
       width: 570px;
       height: 231px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      width: 343px;
+      height: 150px;
     }
   }
 }

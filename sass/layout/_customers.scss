@@ -12,6 +12,9 @@
   @media screen and (max-width: $bp-tablet) {
     height: 746px;
   }
+  @media screen and (max-width: $bp-mobile) {
+    height: 588px;
+  }
 
   &__title{
     font-weight: 700;
@@ -24,6 +27,12 @@
     @media screen and (max-width: $bp-tablet) {
       margin-bottom: 18px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
+      margin-top: 60px;
+    }
   }
 
   &__parag{
@@ -34,6 +43,16 @@
     margin-bottom: 60px;
     @media screen and (max-width: $bp-tablet) {
       margin-bottom: 40px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      width: 300px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__parag span{
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
     }
   }
 
@@ -52,7 +71,6 @@
     width: 1202px;
     height: 436px;
     margin-bottom: 60px;
-
     }
 
     &__slide{
@@ -66,6 +84,11 @@
         width: 450px!important;
         height: 250px;
         padding-top: 23px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        width: 343px;
+        height: 250px;
+        padding-top: 20px;
       }
 
       &__photo{
@@ -87,6 +110,11 @@
         text-transform: uppercase;
         color: var(--color-brand-black);
         @media screen and (max-width: $bp-tablet) {
+          font-weight: 600;
+          font-size: 25px;
+          line-height: 37.5px;
+        }
+        @media screen and (max-width: $bp-mobile) {
           font-weight: 600;
           font-size: 25px;
           line-height: 37.5px;
@@ -116,6 +144,9 @@
         margin: 0px 62px 0px 61px;
         @media screen and (max-width: $bp-tablet) {
           margin: 0px 38px 0px 38px;
+        }
+        @media screen and (max-width: $bp-mobile) {
+          margin: 0px 18px 0px 9px;
         }
       }
 

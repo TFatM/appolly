@@ -126,6 +126,10 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    @media screen and (max-width: $bp-mobile) {
+      // top: 586px;
+      // left: 55px;
+    }
   }
   
   &__phoneImg{
@@ -141,6 +145,12 @@
       width: 378px;
       height: 423px;
     }
+        @media screen and (max-width: $bp-mobile) {
+          width: 466px;
+          height: 521px;
+          top: 586px;
+          left: 55px;
+        }
   }
 }
 

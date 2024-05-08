@@ -7,11 +7,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  // padding-left: 175px;
-  // padding-right: 132px;
   font-family: "Josefin";
   @media screen and (max-width: $bp-tablet) {
     height: 1366px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    height: 2230px;
   }
 
    &__title{
@@ -22,9 +23,16 @@
     text-transform: uppercase;
     color: var(--color-brand-white);
     margin-top: 120px;
+    @media screen and (max-width: $bp-mobile) {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
+      margin-top: 60px;
+    }
   }
 
   &__parag{
+    width: 601px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -32,11 +40,28 @@
     color: var(--color-brand-white);
     margin-top: 18px;
     margin-bottom: 60px;
+    @media screen and (max-width: $bp-tablet) {
+      width: 450px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      width: 300px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__parag span{
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__container{
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: $bp-mobile) {
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__top-cont{
@@ -48,11 +73,20 @@
       margin: 77px 0px 25px 0px;
     gap: 240px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      margin: 0;
+      margin-bottom: 324px;
+      gap: 40px;
+    }
   }
 
   &__chat{
     color: var(--color-brand-white);
     text-align: center;
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 40px;
+    }
 
     &__img{
       margin-bottom: 22px;
@@ -83,6 +117,9 @@
   &__unlimFeatures{
     color: var(--color-brand-white);
     text-align: right;
+    @media screen and (max-width: $bp-mobile) {
+      text-align: center;
+    }
 
     &__img {
       margin-bottom: 22px;
@@ -113,6 +150,9 @@
   &__versions{
     color: var(--color-brand-white);
     text-align: left;
+    @media screen and (max-width: $bp-mobile) {
+      text-align: center;
+    }
 
     &__img {
       margin-bottom: 22px;
@@ -149,11 +189,20 @@
       margin: 25px 0px 59px 0px;
       gap: 250px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      margin: 0;
+      margin-top: 324px;
+      gap: 50px;
+    }
   }
 
   &__design{
     color: var(--color-brand-white);
     text-align: right;
+    @media screen and (max-width: $bp-mobile) {
+      text-align: center;
+    }
 
   &__img {
     margin-bottom: 22px;
@@ -184,6 +233,10 @@
   &__graphics{
     color: var(--color-brand-white);
     text-align: left;
+    @media screen and (max-width: $bp-mobile) {
+      text-align: center;
+      margin-bottom: 59px;
+    }
 
   &__img {
     margin-bottom: 22px;
@@ -252,6 +305,13 @@
       left: 230px;
       width: 310px;
       height: 620px !important;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      position: absolute;
+      width: 380px;
+      height: 710px !important;
+      top: 3160px;
+      left: auto;
     }
   }
 }

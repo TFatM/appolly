@@ -10,6 +10,9 @@
   @media screen and (max-width: $bp-tablet) {
     height: 861px;
   }
+@media screen and (max-width: $bp-mobile) {
+  height: 2086px;
+}
 
   &__title{
     font-weight: 700;
@@ -20,6 +23,11 @@
     margin-bottom: 23px;
     @media screen and (max-width: $bp-tablet) {
       margin-bottom: 18px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
     }
   }
 
@@ -32,6 +40,16 @@
     @media screen and (max-width: $bp-tablet) {
       margin-bottom: 32px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      width: 300px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__parag span{
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 
   &__container{
@@ -39,6 +57,10 @@
     gap: 30px;
     @media screen and (max-width: $bp-tablet) {
       gap: 24px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      gap: 30px;
     }
   }
 
@@ -51,6 +73,10 @@
     @media screen and (max-width: $bp-tablet) {
       width: 213px;
       height: 453px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      width: 343px;
+      height: 580px;
     }
 
     &__pic-wrapper{
@@ -68,6 +94,10 @@
         width: 178px;
         height: 178px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        width: 220px;
+        height: 220px;
+      }
     }
 
     &__img{
@@ -77,6 +107,10 @@
       @media screen and (max-width: $bp-tablet) {
         width: 160px;
         height: 160px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        width: 198px;
+        height: 198px;
       }
     }
 
@@ -120,11 +154,17 @@
         padding: 0px 27px 0px 28px;
         margin-bottom: 30px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        margin-bottom: 55px;
+      }
     }
 
     &__parag span{
       @media screen and (max-width: $bp-tablet) {
         display: none;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        display: block;
       }
     }
 
@@ -135,6 +175,9 @@
       gap: 31.5px;
       @media screen and (max-width: $bp-tablet) {
         gap: 14px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        gap: 31px;
       }
 
       &__icon{

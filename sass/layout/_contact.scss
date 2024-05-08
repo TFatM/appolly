@@ -5,6 +5,9 @@
   justify-content: center;
   top: 109px;
   font-family: 'Josefin';
+  @media screen and (max-width: $bp-mobile) {
+    top: 184px;
+  }
 
   &__container{
   display: flex;
@@ -19,6 +22,13 @@
     width: 688px;
     height: 150px;
   }
+  @media screen and (max-width: $bp-mobile) {
+    flex-direction: column;
+    width: 342.76px;
+    height: 310px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   }
 
   &__block{
@@ -31,6 +41,12 @@
       width: 233px;
       height: 60px;
       gap: 17px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      width: 275px;
+      height: 105px;
+      gap: 20px;
     }
 
 
@@ -46,6 +62,10 @@
         width: 60px;
         height: 60px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        width: 50px;
+        height: 50px;
+      }
     }
 
     &__img{
@@ -54,6 +74,10 @@
       @media screen and (max-width: $bp-tablet) {
         width: 24px;
         height: 24px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        width: 20px;
+        height: 20px;
       }
     }
 
@@ -67,7 +91,12 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
-
+      }
+      @media screen and (max-width: $bp-mobile) {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
       }
       &:hover{
         color: var(--color-brand-blue);
@@ -84,6 +113,10 @@
     @media screen and (max-width: $bp-tablet) {
       width: 3px;
       height: 106px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      width: 4px;
+      rotate: 90deg;
     }
   }
 }

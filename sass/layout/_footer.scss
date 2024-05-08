@@ -8,12 +8,19 @@
   @media screen and (max-width: $bp-tablet) {
     height: 438px;
   }
+  @media screen and (max-width: $bp-mobile) {
+    height: 1010px;
+  }
 
   &__container{
     display: flex;
     margin-top: 235px;
     @media screen and (max-width: $bp-tablet) {}
     margin-top: 135px;
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      margin-top: 220px;
+    }
   }
 
   &__logo{
@@ -21,6 +28,10 @@
     color: var(--color-brand-white);
     @media screen and (max-width: $bp-tablet) {
       margin-right: 24px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+      margin-right: 0;
+      margin-bottom: 60px;
     }
 
     &__title{
@@ -31,6 +42,9 @@
       margin-bottom: 2px;
       @media screen and (max-width: $bp-tablet) {
         margin-bottom: 7px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        margin-bottom: 0;
       }
     }
 
@@ -43,11 +57,18 @@
         width: 213px;
         margin-bottom: 30px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        width: 334px;
+        margin-bottom: 38px;
+      }
     }
 
     &__parag span{
       @media screen and (max-width: $bp-tablet) {
         display: none;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        display: block;
       }
     }
 
@@ -57,6 +78,9 @@
       gap: 30.5px;
       @media screen and (max-width: $bp-tablet) {
         gap: 19px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        gap: 30px;
       }
 
       &__icon {
@@ -78,6 +102,10 @@
     @media screen and (max-width: $bp-tablet) {
       margin-right: 115px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      margin-right: 0;
+      margin-bottom: 60px;
+    }
 
     &__title{
       font-weight: 600;
@@ -90,12 +118,20 @@
         line-height: 30px;
         margin-bottom: 13px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 25px;
+        line-height: 37.5px;
+        margin-bottom: 11px;
+      }
     }
 
     &__list{
       display: flex;
       flex-direction: column;
       gap: 12px;
+      @media screen and (max-width: $bp-mobile) {
+        gap: 18px;
+      }
 
       &__link{
         font-weight: 400;
@@ -103,9 +139,6 @@
         line-height: 24px;
         color: var(--color-brand-white);
         transition: color .2s;
-        @media screen and (max-width: $bp-tablet) {
-
-        }
 
         &:hover{
           color: var(--color-brand-blue);
@@ -128,6 +161,11 @@
         line-height: 30px;
         margin-bottom: 13px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        font-size: 25px;
+        line-height: 37.5px;
+        margin-bottom: 11px;
+      }
     }
 
     &__parag{
@@ -138,6 +176,9 @@
       @media screen and (max-width: $bp-tablet) {
         margin-bottom: 30px;
       }
+      @media screen and (max-width: $bp-mobile) {
+        margin-bottom: 33px;
+      }
     }
 
     &__form{
@@ -145,7 +186,9 @@
       height: 50px;
       @media screen and (max-width: $bp-tablet) {
         width: 213px;
-        height: 50px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        width: 343px;
       }
     }
 
@@ -159,11 +202,17 @@
       color: var(--color-brand-black);
       @media screen and (max-width: $bp-tablet) {
         width: 213px;
-        height: 50px;
         padding-left: 15px;
         font-weight: 300;
         font-size: 12.8px;
         line-height: 12.8px;
+      }
+      @media screen and (max-width: $bp-mobile) {
+        width: 343px;
+        padding-left: 17px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
       }
 
       &__button{
@@ -179,6 +228,9 @@
         transition: background-color .3s;
         @media screen and (max-width: $bp-tablet) {
           right: -82%;;
+        }
+        @media screen and (max-width: $bp-mobile) {
+          right: -89%;
         }
 
         &:hover{
@@ -198,6 +250,11 @@
       margin-top: 56px;
       margin-bottom: 18px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      width: 343px;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
   }
 
   &__copyright{
@@ -205,5 +262,10 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--color-brand-white);
+    @media screen and (max-width: $bp-mobile) {
+      font-weight: 300;
+      font-size: 12.8px;
+      line-height: 12.8px;
+    }
   }
 }

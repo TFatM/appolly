@@ -17,6 +17,13 @@
     @media screen and (max-width: $bp-tablet) {
       margin-bottom: 18px;
     }
+    @media screen and (max-width: $bp-mobile) {
+      width: 287px;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 37.5px;
+      margin-top: 60px;
+    }
   }
 
   &__parag{
@@ -26,5 +33,14 @@
     text-align: center;
     color: var(--color-brand-gray);
     margin-bottom: 60px;
+    @media screen and (max-width: $bp-mobile) {
+      margin-bottom: 40px;
+      width: 300px;
+    }
+  }
+  &__parag span{ 
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
   }
 }
