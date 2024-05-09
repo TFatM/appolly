@@ -1,0 +1,142 @@
+.player{
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+    width: 570px;
+    height: 319px;
+    border-radius: 10px;
+
+    &__video {
+        width: 770px;
+        height: 319px;
+        border-radius: 10px;
+    
+        @media screen and (max-width: $bp-tablet) {
+          width: 570px;
+          height: 231px;
+        }
+    
+        @media screen and (max-width: $bp-mobile) {
+          width: 343px;
+          height: 150px;
+        }
+      }
+
+      &__circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: -3;
+        width: 50px;
+        height: 50px;
+        opacity: 100%;
+        border-radius: 50%;
+        background-color: var(--color-brand-white);
+        flex-shrink: 0;
+        &__second{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: -2;
+            width: 60px;
+            height: 60px;
+            opacity: 70%;
+            border-radius: 50%;
+            background-color: var(--color-brand-white);
+            flex-shrink: 0;
+        }
+      &__third{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: -1;
+        width: 70px;
+        height: 70px;
+        opacity: 60%;
+        border-radius: 50%;
+        background-color: var(--color-brand-white);
+        flex-shrink: 0;
+      }
+      }
+
+      &__button {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+      position: relative;
+      z-index: 1;
+      width: 24px;
+      height: 24px;
+      bottom: 62%;
+      left: 46%;
+      background: none;
+      border: none;
+      text-align: center;
+      outline: 0;
+      padding: 0;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    &__toggle{
+      width: 18px;
+      height: 18px;
+      border: noen;
+      border: none;
+      cursor: pointer;
+    }
+
+      &__controls {
+        display: flex;
+        position: relative;
+        width: 566px;
+        // transform: translateY(100%) translateY(1px);
+        opacity: 0%; //зняти коментар після закінчення//
+        bottom: 58px;
+        left: 2px;
+        transition: all .3s;
+        flex-wrap: wrap;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      &:hover .player__controls {
+        opacity: 100%;
+        // transform: translateY(-5px);
+      }
+
+      // &:hover .progress {
+      //   height: 15px;
+      // }
+
+      &__controls>* {
+        flex: 1;
+      }
+
+      &__slider{
+        width: 10px;
+        height: 20px;
+        margin-left: 380px;
+        margin-right: 20px;
+      }
+}
+
+.progress {
+  flex: 10;
+  position: relative;
+  display: flex;
+  margin: 0px 2px 0px 2px;
+  flex-basis: 100%;
+  height: 5px;
+  transition: height 0.3s;
+  background: var(--color-brand-white);
+  cursor: pointer;
+  
+  &__filled {
+    width: 50%;
+    background: var(--color-brand-blue);
+    flex: 0;
+    flex-basis: 50%;
+  }
+}

@@ -347,9 +347,29 @@
     <p class="htu-section__parag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit <br>
     vitae. <span>Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, <br>
     ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</span></p>
-    <video 
-    class="htu-section__video"
-    src="./video/21844-322234054_small.mp4"></video>
+    <div class="player">
+      <video
+      class="player__video viewer"
+      src="./video/21844-322234054_small.mp4">
+    </video>
+    <div class="player__button">
+      <div class="player__circle">
+        <div class="player__circle__second">
+          <div class="player__circle__third">
+            <button class="player__toggle toggle" title="Toggle Play" onclick="togglePlay()">
+              <img class="player__toggle__vector" src="./img/videoButton-Vector.svg" >
+            </button>
+          </div>
+        </div>
+      </div> 
+    </div>
+      <div class="player__controls">
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
+        <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+      </div>
+    </div>
   </section>
   <section class="team">
     <h3 class="team__title">Our reative team</h3>
@@ -652,5 +672,6 @@
 <script src="./js/customers-carousel.js"></script>
 <script src="./js/swiper.js"></script>
 <script src="./js/burgerMenu.js"></script>
+<script src="./js/video-player.js"></script>
 </body>
 </html>
