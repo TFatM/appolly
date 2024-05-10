@@ -100,8 +100,7 @@
         display: flex;
         position: relative;
         width: 566px;
-        // transform: translateY(100%) translateY(1px);
-        // opacity: 0%; //зняти коментар після закінчення//
+        opacity: 0%;
         bottom: 58px;
         left: 2px;
         transition: all .3s;
@@ -118,12 +117,7 @@
       }
       &:hover .player__controls {
         opacity: 100%;
-        // transform: translateY(-5px);
       }
-
-      // &:hover .progress {
-      //   height: 15px;
-      // }
 
       &__controls>* {
         flex: 1;
