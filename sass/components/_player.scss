@@ -5,6 +5,9 @@
     width: 570px;
     height: 319px;
     border-radius: 10px;
+    @media screen and (max-width: $bp-mobile) {
+      width: 520px;
+    }
 
     &__video {
         width: 770px;
@@ -79,6 +82,10 @@
       padding: 0;
       cursor: pointer;
       transition: opacity 0.3s;
+      @media screen and (max-width: $bp-tablet) {
+        bottom: 53%;
+        left: 46%;
+      }
     }
 
     &__toggle{
@@ -94,12 +101,20 @@
         position: relative;
         width: 566px;
         // transform: translateY(100%) translateY(1px);
-        opacity: 0%; //зняти коментар після закінчення//
+        // opacity: 0%; //зняти коментар після закінчення//
         bottom: 58px;
         left: 2px;
         transition: all .3s;
         flex-wrap: wrap;
         background: rgba(0, 0, 0, 0.1);
+        @media screen and (max-width: $bp-tablet) {
+          width: 408px;
+          left: 82px;
+        }
+        @media screen and (max-width: $bp-mobile) {
+          width: 267px;
+          left: 127px;
+        }
       }
       &:hover .player__controls {
         opacity: 100%;
@@ -119,6 +134,12 @@
         height: 20px;
         margin-left: 380px;
         margin-right: 20px;
+        @media screen and (max-width: $bp-tablet) {
+          margin-left: 300px;
+        }
+        @media screen and (max-width: $bp-mobile) {
+          margin-left: 180px;
+        }
       }
 }
 
