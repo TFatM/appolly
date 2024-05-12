@@ -152,6 +152,48 @@
           left: 55px;
         }
   }
+
+      &__blog{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 400px;
+          background-image: url(/img/Background-Hero.png);
+          background-repeat: no-repeat;
+          background-position: center top;
+          background-size: cover;
+          font-family: "Josefin";
+
+          &__title{
+            position: relative;
+            top: 220px;
+            font-weight: 700;
+            font-size: 48.83px;
+            line-height: 63.38px;
+            text-transform: uppercase;
+            color: var(--color-brand-white);
+          }
+
+          &__link{
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 280px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--color-brand-white);
+            gap: 10px;
+            &:hover{
+              text-decoration: underline;
+            }
+
+            &__icon{
+              width: 18px;
+              height: 18px;
+            }
+          }
+      }
 }
 
 .square{

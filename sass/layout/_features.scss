@@ -295,23 +295,19 @@
   }
 
   &__app-img{
+    display: flex;
+    align-self: center;
     position: relative;
-    top: -1074px;
-    left: 314px;
-    width: 555px;
-    height: 905px !important;
+    top: -50%;
+    width: 710px;
     @media screen and (max-width: $bp-tablet) {
-      top: -739px;
-      left: 277px;
-      width: 310px;
-      height: 600px !important;
+    top: -49%;
+    width: 380px;
     }
     @media screen and (max-width: $bp-mobile) {
       position: absolute;
-      width: 380px;
-      height: 710px !important;
-      top: 3160px;
-      left: auto;
+      width: 500px;
+      top: 3095px;
     }
   }
 }
