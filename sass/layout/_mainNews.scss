@@ -1,0 +1,57 @@
+.News{
+  display: flex;
+  height: 3884px;
+  font-family: 'Josefin';
+
+  &__main{
+    display: flex;
+    flex-direction: column;
+    width: 771px;
+    height: 3644px;
+    margin: 120px 30px 120px 134px;
+    gap: 60px;
+
+    &__container{
+      width: 771px;
+    }
+
+    &__image{
+      width: 770px;
+      height: 300px;
+      margin-bottom: 50px;
+    }
+
+    &__title{
+      width: 771px;
+      height: 117px;
+      font-weight: 600;
+      font-size: 39.06px;
+      line-height: 58.5px;
+      color: var(--color-brand-black);
+      text-transform: uppercase;
+      margin-bottom: 18px;
+
+      &.big{
+        margin-bottom: 70px;
+      }
+    }
+
+    &__parag{
+      width: 770px;
+      height: 92px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-brand-gray);
+      margin-bottom: 40px;
+    }
+
+    &__link{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      color: var(--color-brand-blue);
+      text-decoration: underline;
+    }
+  }
+}
