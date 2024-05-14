@@ -1,0 +1,50 @@
+.recent{
+  display: flex;
+  flex-direction: column;
+  width: 371px;
+  height: 1700px;
+  margin-top: 40px;
+  font-family: 'Josefin';
+
+  &__title{
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: var(--color-brand-black);
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  &__news{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    gap: 40px;
+  }
+
+  &__container{
+    width: 370px;
+    gap: 40px;
+  }
+
+  &__image{
+    width: 370px;
+    height: 180px;
+    margin-bottom: 18px;
+  }
+
+  &__parag{
+    width: 370px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-brand-black);
+    text-transform: uppercase;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

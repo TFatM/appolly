@@ -1,0 +1,36 @@
+.tags{
+  width: 306px;
+  height: 139px;
+  margin-top: 40px;
+  font-family: 'Josefin';
+
+  &__title{
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: var(--color-brand-black);
+    margin-bottom: 13px;
+  }
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 306px;
+    height: 78px;
+    gap: 30px;
+  }
+
+  &__link{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-brand-black);
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: color .3s;
+
+    &:hover{
+      color: var(--color-brand-blue);
+    }
+  }
+}

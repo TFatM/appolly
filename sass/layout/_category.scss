@@ -1,0 +1,33 @@
+.category{
+  width: 214px;
+  height: 283px;
+  margin-top: 40px;
+  font-family: 'Josefin';
+
+  &__title{
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 47.25px;
+    color: var(--color-brand-black);
+    margin-bottom: 13px;
+    text-transform: uppercase;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__link{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-brand-gray);
+    text-transform: uppercase;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
