@@ -18,8 +18,8 @@
     justify-content: space-between;
     max-width: 1170px;
     width: 100%;
-    margin: auto;
-    // gap: 627px;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width: $bp-tablet){
       min-width: 668px;
       width: 100%;
